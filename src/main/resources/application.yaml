@@ -3,6 +3,8 @@ logging:
     com.hhb: debug
 server:
   port: 8080
+  servlet:
+    path: /
 spring:
     datasource:
       driver-class-name: com.mysql.jdbc.Driver
