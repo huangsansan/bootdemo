@@ -19,6 +19,7 @@ public class JdbcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new MyInterceptor()).addPathPatterns("/*");
+        System.out.println("hah");
     }
 
     //    @Bean
