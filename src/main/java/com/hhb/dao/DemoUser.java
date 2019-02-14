@@ -1,5 +1,7 @@
 package com.hhb.dao;
 
-public interface DemoUser {
+import tk.mybatis.mapper.common.Mapper;
+
+public interface DemoUser extends Mapper<com.hhb.pojo.DemoUser> {
     public Long getCount1();
 }

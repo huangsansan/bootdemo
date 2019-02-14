@@ -1,10 +1,21 @@
 package com.hhb.pojo;
 
+import tk.mybatis.mapper.annotation.KeySql;
+
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+
+@Table(name = "user")
 public class DemoUser {
-   Integer id;
-   String name;
-   String age;
-   String password;
+    @Id
+    @KeySql(useGeneratedKeys = true)
+    private Integer id;
+    private String name;
+    //不需要持久化的注解
+    @Transient
+    private String age;
+    private String password;
 
     public Integer getId() {
         return id;

@@ -1,8 +1,9 @@
 package com.hhb;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import tk.mybatis.spring.annotation.MapperScan;
 
+/*换成通用mapper，包扫描更改成tk包下的*/
 @SpringBootApplication
 @MapperScan("com.hhb.dao")
 public class SpringApplication {
